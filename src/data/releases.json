@@ -1,0 +1,40 @@
+{
+  "releases": [
+    {
+      "title": "R0T",
+      "artist": "IMG & TWXN",
+      "date": "2024-05-13",
+      "description": "Originally released by IMG & soulyoumadethis, R0T set the tone for IMG's future releases.",
+      "coverArt": "/src/img/releases/yvl.png",
+      "links": {
+        "spotify": "https://open.spotify.com/album/69HgW0sNPWwqJ4dtZ9U3Cy?si=3M5JxOktTkKwnYpUG5xgiA",
+        "appleMusic": "https://music.apple.com/us/song/r0t/1749154845",
+        "other": "#"
+      }
+    },
+    {
+      "title": "CULT MUSIC",
+      "artist": "IMG",
+      "date": "2025-02-27",
+      "description": "CULT MUSIC is a 2-disc mixtape featuring nearly all IMG releases from May 13, 2024 to February 28, 2025.",
+      "coverArt": "/src/img/releases/CMcoverFINAL.png",
+      "links": {
+        "spotify": "https://open.spotify.com/album/2X8xw36LRJTb82VBqqupIl?si=AEB8GHRwThurCBtlmANO0A",
+        "appleMusic": "https://music.apple.com/us/album/cult-music/1798885181",
+        "other": "#"
+      }
+    },
+    {
+      "title": "4TH DIMENSION",
+      "artist": "IMG & Moving In Silence",
+      "date": "2025-04-15",
+      "description": "Originally released in 2023, IMG teams up with Moving In Silence to re-release the highest quality album of our kind.",
+      "coverArt": "/src/img/releases/4D.png",
+      "links": {
+        "spotify": "https://open.spotify.com/album/0ULUaqEMF2yUDrzxHB3CuV?si=y3404ys9SSKK7ledCdAZvQ",
+        "appleMusic": "https://music.apple.com/us/album/4th-dimension/1808556135",
+        "other": "#"
+      }
+    }
+  ]
+} 

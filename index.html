@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intelligent Music Group</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo/IMGEYE.svg">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+    <div class="loading-screen">
+      <div class="loading-content">
+        <div class="loading-logo">
+          <img src="/img/logo/IMGEYE.svg" alt="Loading logo">
+        </div>
+        <div class="loading-bar-container">
+          <div class="loading-bar"></div>
+        </div>
+        <div class="loading-text">Loading assets... <span class="loading-progress">0%</span></div>
+      </div>
+    </div>
+    <nav>
+      <div class="top">
+        <div class="logo" onclick="smoothScroll('.landing')">
+          <img src="/img/logo/IMGEYE.svg" alt="Logo">
+        </div>
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="navigation">
+          <ul>
+            <li data-text="HOME" onclick="smoothScroll('.landing')"><span>HOME</span></li>
+            <li data-text="ABOUT" onclick="smoothScroll('.about')"><span>ABOUT</span></li>
+            <li data-text="CONTACT" onclick="smoothScroll('.contact')"><span>CONTACT</span></li>
+          </ul>
+          <div class="mobile-socials">
+            <a href="https://www.youtube.com/@IntelligentMusicGroup" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+            <a href="https://discord.gg/ZfN8xagj5F" target="_blank"><ion-icon name="logo-discord"></ion-icon></a>
+            <a href="https://www.tiktok.com/@intelligentmusic.cc?lang=en" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a>
+            <a href="https://www.instagram.com/intelligentmusic.cc/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <canvas id="bg"></canvas>
+      <div class="landing" id="landing">
+        <div class="scroll-tip">
+          <div class="scroll">
+            <img src="/img/SCROLL.png" alt="">
+          </div>
+          <div class="scroll">
+            <img src="/img/SCROLL.png" alt="">
+          </div>
+        </div>
+        <div class="landing-bottom">
+        </div>
+      </div>
+      <div class="about" id="about">
+        <section class="about-text">
+          <h2>ABOUT US</h2>
+          <p>The Intelligent Music Group is a marketing team dedicated to pushing independent music with precision and purpose. We don’t run ads and hope for clicks. We build strategy, craft rollouts, and place content where it hits. IMG works directly with artists to position releases, target real audiences, and move records. No fluff, no filler. Just work that connects.</p>
+        </section>
+        <section class="pc">
+          <img src="/img/computer.png" alt="">
+        </section>
+      </div>
+      <div class="featured" id="featured">
+        <div class="title">
+          <h2>FEATURED RELEASES</h2>
+        </div>
+        <div class="track-list-wrapper">
+          <div class="track-list">
+          </div>
+        </div>
+      </div>
+      <div class="contact" id="contact">
+        <h2>GET IN TOUCH</h2>
+        <div class="links">
+          <div class="scroll-container left">
+            <a class="link" href="https://www.instagram.com/intelligentmusic.cc/" target="_blank">  @intelligentmusic.cc  @intelligentmusic.cc  @intelligentmusic.cc  @intelligentmusic.cc</a>
+            <a class="link" href="https://www.instagram.com/intelligentmusic.cc/" target="_blank">  @intelligentmusic.cc  @intelligentmusic.cc  @intelligentmusic.cc  @intelligentmusic.cc</a>
+          </div>
+          <div class="scroll-container right">
+            <a class="link" href="mailto:intelligentmusic.img@gmail.com">  intelligentmusic.img@gmail.com  intelligentmusic.img@gmail.com  intelligentmusic.img@gmail.com  intelligentmusic.img@gmail.com  intelligentmusic.img@gmail.com</a>
+            <a class="link" href="mailto:intelligentmusic.img@gmail.com">  intelligentmusic.img@gmail.com  intelligentmusic.img@gmail.com  intelligentmusic.img@gmail.com  intelligentmusic.img@gmail.com  intelligentmusic.img@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="info-pinned">
+        <div class="logo">
+          <img src="/img/logo/name.svg" alt="">
+        </div>
+        <div class="info">
+          <p>dev&design by <a href="https://madoxy.github.io/" target="_blank">madoxy</a></p>
+          <p>© 2025 Intelligent Music Group</p>
+        </div>
+      </div>
+      <div class="socials">
+        <a href="https://www.youtube.com/@IntelligentMusicGroup" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+        <a href="https://discord.gg/ZfN8xagj5F" target="_blank"><ion-icon name="logo-discord"></ion-icon></a>
+        <a href="https://www.tiktok.com/@intelligentmusic.cc?lang=en" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a>
+        <a href="https://www.instagram.com/intelligentmusic.cc/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+      </div>
+      <div class="gradient"></div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
