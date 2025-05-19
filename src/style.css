@@ -590,7 +590,7 @@ footer .gradient{
     top: 5dvh;
     left: 0;
     width: 100%;
-    height: calc(100vh - 5dvh);
+    height: calc(100dvh - 5dvh);
     background: #141414f5;
     backdrop-filter: blur(10px);
     transform: translateX(100%);
@@ -602,6 +602,7 @@ footer .gradient{
     display: flex !important;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: env(safe-area-inset-bottom, 1dvh);
   }
 
   nav ul {
