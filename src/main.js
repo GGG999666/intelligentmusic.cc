@@ -21,6 +21,11 @@ import { clearcoatRoughness, metalness, roughness } from 'three/tsl';
 // Import animations
 import { initTypewriterEffects } from './animations.js';
 
+// Add these imports at the top of the file with other imports
+import yvlImage from './img/releases/yvl.png';
+import cmImage from './img/releases/CMcoverFINAL.png';
+import d4Image from './img/releases/4D.png';
+
 gsap.registerPlugin(Draggable,DrawSVGPlugin,Observer,ScrollTrigger,ScrollToPlugin,TextPlugin);
 
 // Loading screen elements
@@ -40,6 +45,13 @@ let totalProgress = {
   releases: 0
 };
 
+// Create an image map
+const imageMap = {
+  'yvl.png': yvlImage,
+  'CMcoverFINAL.png': cmImage,
+  '4D.png': d4Image
+};
+
 // Function to format date from YYYY-MM-DD to DD-MM-YY
 const formatDate = (dateString) => {
   const date = new Date(dateString);
@@ -54,10 +66,13 @@ const createTrackElement = (release, index) => {
   const trackElement = document.createElement('div');
   trackElement.className = 'track';
   
+  // Get the image URL from our image map
+  const imageUrl = imageMap[release.coverArt] || '';
+  
   trackElement.innerHTML = `
     <div class="about-track">
       <div class="top">
-        <img src="${release.coverArt}" alt="${release.title} cover art" class="cover-art">
+        <img src="${imageUrl}" alt="${release.title} cover art" class="cover-art">
       </div>
       <div class="info">
         <div class="details">
