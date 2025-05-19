@@ -21,6 +21,18 @@ import { clearcoatRoughness, metalness, roughness } from 'three/tsl';
 // Import animations
 import { initTypewriterEffects } from './animations.js';
 
+// Add these imports at the top of the file with other imports
+import yvlImage from './img/releases/yvl.png';
+import cmImage from './img/releases/CMcoverFINAL.png';
+import d4Image from './img/releases/4D.png';
+
+// Create an image map
+const imageMap = {
+  'yvl.png': yvlImage,
+  'CMcoverFINAL.png': cmImage,
+  '4D.png': d4Image
+};
+
 gsap.registerPlugin(Draggable,DrawSVGPlugin,Observer,ScrollTrigger,ScrollToPlugin,TextPlugin);
 
 // Loading screen elements
@@ -49,15 +61,21 @@ const formatDate = (dateString) => {
   return `${day}-${month}-${year}`;
 };
 
+// Add this near the top of the file, after other imports
+const images = import.meta.glob('/public/img/releases/*.png', { eager: true });
+
 // Function to create a single track element
 const createTrackElement = (release, index) => {
   const trackElement = document.createElement('div');
   trackElement.className = 'track';
   
+  // Get the image URL from our image map
+  const imageUrl = imageMap[release.coverArt] || '';
+  
   trackElement.innerHTML = `
     <div class="about-track">
       <div class="top">
-        <img src="${release.coverArt}" alt="${release.title} cover art" class="cover-art">
+        <img src="${imageUrl}" alt="${release.title} cover art" class="cover-art">
       </div>
       <div class="info">
         <div class="details">
